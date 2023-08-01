@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+/*Overall*/
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+body{
+    background-color: hsl(204, 43%, 93%);
+}
+.main{
+    display:grid;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+/*Grid-Container*/
+.container{
+    display:grid;
+    justify-items: center;
+    align-items: center;
+    height: auto;
+    width:700px;
+    border-radius: 20px;
+}
+
+/*All-Grid-Allignment-Sizes*/
+.grid-one,.grid-two,.grid-three{
+    padding: 30px;
+    height: 250px;
+}
+
+/*Grid-One-Allignment*/
+.grid-one{
+    display: grid;
+    align-items: center;
+    grid-column: 1/ span 2;
+    grid-row: 1;
+    width: 700px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: white;
+}
+.mainHeading{
+    color:hsl(179, 62%, 43%);
+    font-size: 30px;
+}
+#heading1{
+    color: hsl(71, 73%, 54%);
+    font-size: 20px;
+    padding: 0px;
+}
+#paragraph1{
+    line-height: 25px;
+    width: 600px;
+    color: hsl(218, 22%, 67%);
+}
+
+/*(Grid-Two) & (Grid-Three)-Allignment-Sizes*/
+.grid-two,.grid-three{
+    width:350px;
+}
+
+/*Grid-Two-Allignment*/
+.grid-two{
+    border-bottom-left-radius: 20px;
+    background-color: hsl(179, 62%, 43%);
+}
+#heading2{
+    color: hsl(204, 43%, 90%);
+    padding: 10px 0px;
+    font-size: 18px;
+}
+.childGrid{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+    color: hsl(204, 43%, 90%);
+}
+.rate{
+    font-size: 35px;
+}
+.rateDescription{
+    font-size: 16px;
+    margin-top: 10px;
+}
+#paragraph2{
+    width: 100%;
+    padding: 10px 0px 25px 0px;
+    color: hsl(204, 43%, 90%);
+    font-size: 16px;
+}
+.button{
+    padding: 10px;
+    width: 100%;
+    border-radius:5px;
+    border: none;
+    outline: none;
+    background-color: hsl(71, 73%, 54%);
+    color: hsl(204, 43%, 93%);
+    box-shadow:5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/*Grid-Three-Allignment*/
+.grid-three{
+    border-bottom-right-radius: 20px;
+    background-color: hsl(179, 62%, 53%);
+}
+#heading3{
+    color: hsl(204, 43%, 93%);
+    padding: 10px 0px;
+    font-size: 18px;
+}
+#paragraph3{
+    font-size: 16px;
+    width:200px;
+    padding: 10px 0px 0px 0px;
+    color: hsl(204, 43%, 90%);
+}
+
+/*This is for Tablet view*/
+@media screen and (max-width:769px) and (min-width:426px) {
+    
+    /*Overall*/
+    *{
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .main{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        height:100vh;
+        margin:10px 0px;
+    }
+
+    /*Grid Container*/
+    .container{
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    /*Grid-One*/
+    .grid-one{
+        display: grid;
+        align-items: center;
+        grid-column: 1/ span 1;
+        grid-row: 1;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        background-color: white;
+    }
+    .mainHeading{
+        color:hsl(179, 62%, 43%);
+        padding: 5px 0px 0px 0px;
+        font-size: 15px;
+    }
+    #heading1{
+        color: hsl(71, 73%, 54%);
+        padding: 5px 0px;
+        font-size: 13px;
+        width: 200px;
+        line-height: 20px;
+    }
+    #paragraph1{
+        font-size: 10px;
+        width: 200px;
+        color: hsl(218, 22%, 67%);
+        line-height: 20px;
+    }
+
+    /*Grid-Two*/
+    .grid-two{
+        border-radius: 0px;
+        background-color: hsl(179, 62%, 43%);
+    }
+    #heading2{
+        color: hsl(204, 43%, 90%);
+        padding: 5px 0px;
+        font-size: 13px;
+    }
+    .childGrid{
+        display:grid;
+        grid-template-columns: 1fr 2fr;
+        color: hsl(204, 43%, 90%);
+    }
+    .rate{
+        font-size: 30px;
+    }
+    .rateDescription{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    #paragraph2{
+        width: 100%;
+        padding: 10px 0px 25px 0px;
+        color: hsl(204, 43%, 90%);
+        font-size: 12px;
+    }
+    .button{
+        padding: 10px;
+        width: 100%;
+        border-radius:5px;
+        border: none;
+        outline: none;
+        background-color: hsl(71, 73%, 54%);
+        color: hsl(204, 43%, 93%);
+        font-size: 12px;
+    }
+
+    /*Grid-Three*/
+    .grid-three{
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: hsl(179, 62%, 53%);
+    }
+    #heading3{
+        color: hsl(204, 43%, 93%);
+        padding: 5px 0px;
+        font-size: 13px;
+    }
+    #paragraph3{
+        font-size: 12px;
+        width:140px;
+        padding: 5px 0px 0px 0px;
+        color: hsl(204, 43%, 90%);
+    }
+
+    /*All three grids*/
+    .grid-one,.grid-two,.grid-three{
+        width: 250px;
+        height: auto;
+    }
+}
+
+/*This is for Large Mobile view*/
+@media screen and (max-width:426px) and (min-width:321px){
+
+    /*Overall*/
+    *{
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .main{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        height:100vh;
+        margin:10px 0px;
+    }
+
+    /*Grid Container*/
+    .container{
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    /*Grid-One*/
+    .grid-one{
+        display: grid;
+        align-items: center;
+        grid-column: 1/ span 1;
+        grid-row: 1;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        background-color: white;
+    }
+    .mainHeading{
+        color:hsl(179, 62%, 43%);
+        padding: 5px 0px 0px 0px;
+        font-size: 15px;
+    }
+    #heading1{
+        color: hsl(71, 73%, 54%);
+        padding: 5px 0px;
+        font-size: 13px;
+        width: 200px;
+        line-height: 20px;
+    }
+    #paragraph1{
+        font-size: 10px;
+        width: 200px;
+        color: hsl(218, 22%, 67%);
+        line-height: 20px;
+    }
+
+    /*Grid-Two*/
+    .grid-two{
+        border-radius: 0px;
+        background-color: hsl(179, 62%, 43%);
+    }
+    #heading2{
+        color: hsl(204, 43%, 90%);
+        padding: 5px 0px;
+        font-size: 13px;
+    }
+    .childGrid{
+        display:grid;
+        grid-template-columns: 1fr 2fr;
+        color: hsl(204, 43%, 90%);
+    }
+    .rate{
+        font-size: 30px;
+    }
+    .rateDescription{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    #paragraph2{
+        width: 100%;
+        padding: 10px 0px 25px 0px;
+        color: hsl(204, 43%, 90%);
+        font-size: 12px;
+    }
+    .button{
+        padding: 10px;
+        width: 100%;
+        border-radius:5px;
+        border: none;
+        outline: none;
+        background-color: hsl(71, 73%, 54%);
+        color: hsl(204, 43%, 93%);
+        font-size: 12px;
+    }
+
+    /*Grid-Three*/
+    .grid-three{
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: hsl(179, 62%, 53%);
+    }
+    #heading3{
+        color: hsl(204, 43%, 93%);
+        padding: 5px 0px;
+        font-size: 13px;
+    }
+    #paragraph3{
+        font-size: 12px;
+        width:140px;
+        padding: 5px 0px 0px 0px;
+        color: hsl(204, 43%, 90%);
+    }
+
+    /*All three grids*/
+    .grid-one,.grid-two,.grid-three{
+        width:100%;
+        height: auto;
+    }
+
+}
+
+/*This is for Small Mobile view*/
+@media screen and (max-width:321px){
+
+    /*Overall*/
+    *{
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: auto;
+    }
+    .main{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        height: auto;
+        margin:10px 0px;
+    }
+
+    /*Grid Container*/
+    .container{
+        width:250px;
+        margin: 0 auto;
+    }
+
+    /*Grid-One*/
+    .grid-one{
+        display: grid;
+        align-items: center;
+        grid-column: 1/ span 1;
+        grid-row: 1;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        background-color: white;
+    }
+    .mainHeading{
+        color:hsl(179, 62%, 43%);
+        padding: 5px 0px 0px 0px;
+        font-size: 15px;
+    }
+    #heading1{
+        color: hsl(71, 73%, 54%);
+        padding: 5px 0px;
+        font-size: 13px;
+        width: 200px;
+        line-height: 20px;
+    }
+    #paragraph1{
+        font-size: 10px;
+        width: 200px;
+        color: hsl(218, 22%, 67%);
+        line-height: 20px;
+    }
+
+    /*Grid-Two*/
+    .grid-two{
+        border-radius: 0px;
+        background-color: hsl(179, 62%, 43%);
+    }
+    #heading2{
+        color: hsl(204, 43%, 90%);
+        padding: 5px 0px;
+        font-size: 13px;
+    }
+    .childGrid{
+        display:grid;
+        grid-template-columns: 1fr 2fr;
+        color: hsl(204, 43%, 90%);
+    }
+    .rate{
+        font-size: 30px;
+    }
+    .rateDescription{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    #paragraph2{
+        width: 100%;
+        padding: 10px 0px 25px 0px;
+        color: hsl(204, 43%, 90%);
+        font-size: 12px;
+    }
+    .button{
+        padding: 10px;
+        width: 100%;
+        border-radius:5px;
+        border: none;
+        outline: none;
+        background-color: hsl(71, 73%, 54%);
+        color: hsl(204, 43%, 93%);
+        font-size: 12px;
+    }
+
+    /*Grid-Three*/
+    .grid-three{
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: hsl(179, 62%, 53%);
+    }
+    #heading3{
+        color: hsl(204, 43%, 93%);
+        padding: 5px 0px;
+        font-size: 13px;
+    }
+    #paragraph3{
+        font-size: 12px;
+        width:140px;
+        padding: 5px 0px 0px 0px;
+        color: hsl(204, 43%, 90%);
+    }
+
+    /*All three grids*/
+    .grid-one,.grid-two,.grid-three{
+        width:100%;
+        height: auto;
+    }
+
+}
+
